@@ -9,6 +9,7 @@ import vector_gold_smaller from "../img/vec-gold-smaller.svg"
 import vector_gold_bigger from "../img/vector-gold-bigger.svg"
 
 import cars_black_smaller from "../img/cars-black-smaller.png"
+import CarsCard from "./CarsCard";
 
 const Main = () => {
   return (
@@ -112,7 +113,8 @@ const Main = () => {
         </div>
       </div>
 
-      {/* <div className="page-catalog">
+
+      <div className="page-catalog">
         <div className="container">
           <div className="page-catalog__inner">
             <h2>Выберите свою будущую машину</h2>
@@ -137,44 +139,23 @@ const Main = () => {
             </div>
 
             <div className="page-catalog__items">
-              <div className="page-catalog__item">
-                <h3>Внедорожники</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Бизнес</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Премиум</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Спорткары</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Комфорт</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Купе</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Минивэны</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
-              <div className="page-catalog__item">
-                <h3>Кабриолеты</h3>
-                <img src={vector_gold_bigger} alt="" />
-              </div>
+
+              <CarsCard name="Внедорожники"/>
+              <CarsCard name="Бизнес"/>
+              <CarsCard name="Премиум"/>
+              <CarsCard name="Спорткары"/>
+
+              <CarsCard name="Комфорт"/>
+              <CarsCard name="Купе"/>
+              <CarsCard name="Минивэны"/>
+              <CarsCard name="Кабриолеты"/>
+
             </div>
 
             
           </div>
         </div>
-      </div> */}
+      </div>
     </main>
   );
 };
