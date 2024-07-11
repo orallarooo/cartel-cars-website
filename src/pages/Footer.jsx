@@ -13,9 +13,19 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__inner">
-          <div className="footer__top">
+
+
+
+
+
+          
             <div className="footer__contacts">
-              <h2 className="footer__contacts-title">Наши контакты:</h2>
+              <h2 className="footer__contacts-title">
+                <span className="footer__contacts-title-span">
+                  Наши
+                </span>
+                 контакты:
+                </h2>
               <div className="footer__contacts-socials">
                 <img src={telegram} alt="telegram" />
                 <img src={whatsup} alt="whatsup" />
@@ -49,14 +59,13 @@ const Footer = () => {
 
             <div className="footer__map">
             </div>
-          </div>
 
-          <div className="footer__bottom">
+         
             <div className="footer__logo">
               <img src={logo_img_big} alt="" />
             </div>
 
-            <p className="footer__adress">
+            <p className="footer__address">
               <p>Железнодорожный пр., 36,</p>
               <p>Санкт-Петербург, Россия, 192148</p>
             </p>
@@ -99,7 +108,6 @@ const Footer = () => {
                 </li>
               </ul>
             </nav>
-          </div>
         </div>
       </div>
     </footer>
