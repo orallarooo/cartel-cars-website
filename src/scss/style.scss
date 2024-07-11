@@ -862,6 +862,10 @@ body {
   padding: 30px 36px 33px 40px;
   grid-area: top-left;
 
+  & .footer__contacts-title-span-2 {
+    display: none;
+  }
+
   @media screen and (max-width: 420px) {
     padding: 0;
     position: absolute;
@@ -873,6 +877,10 @@ body {
 
     & .footer__contacts-title-span {
       display: none;
+    }
+
+    & .footer__contacts-title-span-2 {
+      display: block;
     }
   }
 
@@ -913,13 +921,18 @@ body {
   gap: 10px;
   margin-bottom: 40px;
   @media screen and (max-width: 420px) {
-    margin-bottom: 25px;
+    display: none;
+  }
+}
 
-    & img {
-      transform: scale(0.66);
-      
-    }
-    gap: 0;
+.footer__contacts-socials-min {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 25px;
+  display: none;
+
+  @media screen and (max-width: 420px) {
+    display: flex;
   }
 }
 
