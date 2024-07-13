@@ -3,7 +3,7 @@ import Footer from "./pages/Footer";
 
 import "./scss/style.scss"
 import "./scss/fonts.scss"
-import Main from "./components/Main";
+import Main from "./pages/Main";
 
 
 function App() {

@@ -3,13 +3,14 @@ import c_2_img from "../img/c-2.png";
 import c_3_img from "../img/c-3.png";
 import c_4_img from "../img/c-4.png";
 import star_img from "../img/star.svg";
-import img_group_cars from "../img/img-group-cars.png"
-import vector_to_bottom from "../img/Vector-to-bottom.png"
-import vector_gold_smaller from "../img/vec-gold-smaller.svg"
-import vector_gold_bigger from "../img/vector-gold-bigger.svg"
+import img_group_cars from "../img/img-group-cars.png";
+import vector_to_bottom from "../img/Vector-to-bottom.png";
+import vector_gold_smaller from "../img/vec-gold-smaller.svg";
+import vector_gold_bigger from "../img/vector-gold-bigger.svg";
 
-import cars_black_smaller from "../img/cars-black-smaller.png"
-import CarsCard from "./CarsCard";
+import cars_black_smaller from "../img/cars-black-smaller.png";
+import CarsCard from "../components/CarsCard";
+import ConsultationBox from "../components/ConsultationBox";
 
 const Main = () => {
   return (
@@ -23,11 +24,7 @@ const Main = () => {
               </p>
               <h1 className="first-page__title">
                 Прокат
-                <img
-                  className="small-img"
-                  src={cars_black_smaller}
-                  alt=""
-                />
+                <img className="small-img" src={cars_black_smaller} alt="" />
                 <div className="title-box">
                   <span>
                     <img src={c_1_img} alt="cars" />
@@ -113,7 +110,6 @@ const Main = () => {
         </div>
       </div>
 
-
       <div className="page-catalog">
         <div className="container">
           <div className="page-catalog__inner">
@@ -139,23 +135,49 @@ const Main = () => {
             </div>
 
             <div className="page-catalog__items">
+              <CarsCard name="Внедорожники" />
+              <CarsCard name="Бизнес" />
+              <CarsCard name="Премиум" />
+              <CarsCard name="Спорткары" />
 
-              <CarsCard name="Внедорожники"/>
-              <CarsCard name="Бизнес"/>
-              <CarsCard name="Премиум"/>
-              <CarsCard name="Спорткары"/>
-
-              <CarsCard name="Комфорт"/>
-              <CarsCard name="Купе"/>
-              <CarsCard name="Минивэны"/>
-              <CarsCard name="Кабриолеты"/>
-
+              <CarsCard name="Комфорт" />
+              <CarsCard name="Купе" />
+              <CarsCard name="Минивэны" />
+              <CarsCard name="Кабриолеты" />
             </div>
-
-            
           </div>
         </div>
       </div>
+
+
+
+      <div className="page-consultation">
+        <div className="page-consultation__inner">
+          <ConsultationBox
+            title="Запишитесь на консультацию к менеджеру"
+            sub_1="Подбор авто"
+            sub_2="Расчет стоимости"
+            sub_3="Подписание договора online"
+            submit="СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ"
+          />
+        </div>
+      </div>
+
+      <div className="page-rent">
+        <div className="page-rent__inner">
+          <ConsultationBox
+            title="Быстрая
+            аренда авто
+            в течение дня"
+            sub_1="Консультация"
+            sub_2="Подписание договора"
+            sub_3="Доставка авто в течение дня"
+            submit="ЗАБРОНИРОВАТЬ"
+          />
+        </div>
+      </div>
+
+      
     </main>
   );
 };
