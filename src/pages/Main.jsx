@@ -8,6 +8,8 @@ import vector_to_bottom from "../img/Vector-to-bottom.png";
 import vector_gold_smaller from "../img/vec-gold-smaller.svg";
 import vector_gold_bigger from "../img/vector-gold-bigger.svg";
 
+import benefits_page_img from "../img/benefits-page-right-bg.png"
+
 import cars_black_smaller from "../img/cars-black-smaller.png";
 import CarsCard from "../components/CarsCard";
 import ConsultationBox from "../components/ConsultationBox";
@@ -133,7 +135,6 @@ const Main = () => {
                 <p>Цена</p>
               </div>
             </div>
-
             <div className="page-catalog__items">
               <CarsCard name="Внедорожники" />
               <CarsCard name="Бизнес" />
@@ -149,8 +150,6 @@ const Main = () => {
         </div>
       </div>
 
-
-
       <div className="page-consultation">
         <div className="page-consultation__inner">
           <ConsultationBox
@@ -160,6 +159,44 @@ const Main = () => {
             sub_3="Подписание договора online"
             submit="СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ"
           />
+        </div>
+      </div>
+
+      <div className="page-benefints">
+        <div className="container">
+          <div className="page-benefints__inner">
+            <div className="page-benefints__inner-left">
+              <h2 className="page-benefints__title">
+                Для тех, кто ценит заботливый сервис
+              </h2>
+              <p className="page-benefints__subtitle">
+                Перед каждой арендой автомобиль проходит комплексный детейлинг,
+                что позволяет подготовить его к эксплуатации.
+              </p>
+              <p className="page-benefints__subtitle">
+                Мы осуществляем проверку всех жидкостей и технического состояния
+                автомобиля.
+              </p>
+              <div className="page-benefints__sub-box">
+                <p>
+                  Наши квалифицированные специалисты регулярно проводят ТО,
+                  чтобы гарантировать безопасность на дорогах и предотвратить
+                  возможные неприятности во время эксплуатации
+                </p>
+              </div>
+            </div>
+            <div className="page-benefints__inner-right">
+                  <div className="page-benefints__right-box">
+                        <img src={benefits_page_img} alt="" />
+                  </div>
+                  <div className="page-benefints__right-text">
+                        <img src={star_img} alt="" />
+                        <p>
+                              Наши автомобили и подход оставят незабываемые впечатления от аренды.
+                        </p>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -176,8 +213,6 @@ const Main = () => {
           />
         </div>
       </div>
-
-      
     </main>
   );
 };
