@@ -1234,9 +1234,12 @@ body {
   @media screen and (max-width: 600px) {
     max-width: 351px;
     height: 96px;
-    padding-left: 155px!important;
+    padding-left: 165px!important;
     padding-right: 15px;
     border: 1px solid #272727;
+  }
+  @media screen and (max-width: 400px) {
+    padding-left: 155px!important;
   }
 }
 
