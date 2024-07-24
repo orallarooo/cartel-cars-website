@@ -13,6 +13,7 @@ import benefits_page_img from "../img/benefits-page-right-bg.png"
 import cars_black_smaller from "../img/cars-black-smaller.png";
 import CarsCard from "../components/CarsCard";
 import ConsultationBox from "../components/ConsultationBox";
+import RequirementBox from "../components/RequirementBox";
 
 const Main = () => {
   return (
@@ -199,6 +200,28 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="page-requirement">
+        <div className="container">
+          <div className="page-requirement__inner">
+            <h2 className="page-requirement__title">
+              Наши требования при аренде авто
+            </h2>
+            <div className="page-requirement__boxes">
+              <RequirementBox text="Регистрация или прописка на территории РФ"/>
+              <RequirementBox text="Возраст водителя от 23 лет"/>
+              <RequirementBox text="Стаж вождения от 3-х лет"/>
+              <RequirementBox text="Суточный пробег до 200 км"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
 
       <div className="page-rent">
         <div className="page-rent__inner">
