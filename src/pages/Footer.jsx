@@ -46,7 +46,7 @@ const Footer = () => {
                   Для получения дополнительной консультации свяжитесь с нами по
                   номеру:
                 </p>
-                <span>+7 (911) 089-94-94</span>
+                <span>+7 (911) 123-45-67</span>
               </div>
               <div className="footer__contacts-box">
                 <p>График работы:</p>
@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
               <div className="footer__contacts-box">
                 <p>С предложением о сотрудничестве пишите на почту:</p>
-                <span>work.dm@gmail.com</span>
+                <span>work.work@gmail.com</span>
               </div>
               <div className="footer__contacts-box">
                 <p>Cпособы оплаты:</p>
@@ -71,7 +71,7 @@ const Footer = () => {
 
           <p className="footer__address">
             <p>Железнодорожный пр., 36,</p>
-            <p>Санкт-Петербург, Россия, 192148</p>
+            <p>Санкт-Петербург, Россия, 123456</p>
           </p>
           <div className="footer__btn">
             <a href="#">БЫСТРАЯ БРОНЬ</a>
