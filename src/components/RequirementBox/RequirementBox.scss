@@ -1,0 +1,72 @@
+
+.page-requirement__box {
+      max-width: 351px;
+      height: 155px;
+      padding-left: 163px;
+      padding-right: 10px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+    
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    
+    
+      @media screen and (max-width: 600px) {
+        max-width: 351px;
+        height: 96px;
+        padding-left: 165px!important;
+        padding-right: 15px;
+        border: 1px solid #272727;
+      }
+      @media screen and (max-width: 400px) {
+        padding-left: 155px!important;
+      }
+    }
+    
+    .page-requirement__box p {
+      font-family: Geometria;
+      font-size: clamp(0.875rem, 0.817rem + 0.256vw, 1.125rem);
+      font-weight: 500;
+      line-height: clamp(1.137rem, 1.063rem + 0.333vw, 1.462rem);
+      text-align: left;
+      color: #fff;
+    }
+    .page-requirement__box:last-child p {
+      color: #524931;
+    }
+    .page-requirement__box:nth-child(1) {
+      background-image:  url("../../img/requirement-1.png"), url("../../img/requirement-1-1.png");
+    
+      @media screen and (max-width: 600px) {
+        background-image:  url("../../img/req-1.png"), url("../../img/requirement-1-1.png");
+      }
+    }
+    .page-requirement__box:nth-child(2) {
+      background-image:  url("../../img/requirement-2.png"), url("../../img/requirement-1-1.png");
+      padding-left: 181px;
+    
+      @media screen and (max-width: 600px) {
+        background-image:  url("../../img/req-2.png"), url("../../img/requirement-1-1.png");
+      }
+    }
+    .page-requirement__box:nth-child(3) {
+      background-image:  url("../../img/requirement-3.png"), url("../../img/requirement-1-1.png");
+    
+      @media screen and (max-width: 600px) {
+        background-image:  url("../../img/req-3.png"), url("../../img/requirement-1-1.png");
+      }
+    }
+    .page-requirement__box:nth-child(4) {
+      background-image:  url("../../img/requirement-4.png");
+      box-shadow: 0px 4px 262px 0px #E0C98A45;
+      background-color: #E1C98A;
+      border: 1px solid #0203054D;
+      padding-left: 181px;
+    
+      @media screen and (max-width: 600px) {
+        background-image:  url("../../img/req-4.png");
+      }
+    }
+    

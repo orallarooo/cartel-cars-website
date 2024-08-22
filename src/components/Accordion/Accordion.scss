@@ -1,0 +1,51 @@
+.accordion {
+      list-style-type: none;
+      border-radius: 7px;
+}
+
+.accordion-item {
+      border-top: 1px solid #434343;
+}
+
+.accordion-header {
+      position: relative;
+      width: 100%;
+      padding: 23px 0 23px 0;
+      background-color: transparent;
+      border: 0;
+      text-align: left;
+      cursor: pointer;
+      color: #fff;
+
+      font-family: Geometria;
+      font-size: clamp(0.875rem, 0.817rem + 0.256vw, 1.125rem);
+      font-weight: 500;
+      line-height: clamp(1.137rem, 1.063rem + 0.333vw, 1.462rem);
+      text-align: left;
+
+}
+
+.accordion-body {
+      padding: 0 0 19px 0;
+      border-radius: 20px;
+
+      font-family: Geometria;
+      font-size: clamp(0.875rem, 0.846rem + 0.128vw, 1rem);
+      font-weight: 400;
+      line-height: clamp(1.137rem, 1.077rem + 0.269vw, 1.4rem);
+      text-align: left;
+
+      color: #888;
+}
+
+.accordion-collapse {
+      height: 0;
+      overflow: hidden;
+      transition: height .3s;
+}
+
+.accordion-collapse.open {
+      height: auto;
+      overflow: hidden;
+      transition: height .3s;
+}

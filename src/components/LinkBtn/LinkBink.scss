@@ -1,0 +1,19 @@
+.link {
+      display: flex;
+      width: fit-content;
+      gap: 9px;
+      align-items: center;
+      justify-content: center;
+
+      padding: 28px 23px;
+      font-size: clamp(0.472rem, 0.422rem + 0.221vw, 0.688rem);
+      font-weight: 800;
+      line-height: 13.2px;
+      letter-spacing: 0.15em;
+      text-align: center;
+      color: #fff;
+
+      border-radius: 136px;
+      border: 1.5px solid #E1C98A;
+      border: 1px solid #434343
+}

@@ -1,6 +1,8 @@
-import logo from "../img/logo.svg";
-import clock from "../img/clock.svg";
-import vector_gold_bigger from "../img/vector-gold-bigger.svg";
+import logo from "../../img/logo.svg";
+import clock from "../../img/clock.svg";
+import vector_gold_bigger from "../../img/vector-gold-bigger.svg";
+
+import "./Header.scss"
 
 import React, { useState } from "react";
 

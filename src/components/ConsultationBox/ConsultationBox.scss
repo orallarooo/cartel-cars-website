@@ -1,0 +1,159 @@
+.consultation-box__inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: visible;
+    
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+    
+    .consultation-box__left {
+      padding: 83px 0 96px 70px;
+      color: #fff;
+      max-width: 510px;
+    
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      //  padding: 22px 16px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 22px 16px;
+      }
+    }
+    .consultation-box__left-subtitles {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      @media screen and (max-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 420px) {
+        row-gap: 5px;
+        column-gap: 17px;
+      }
+    }
+    
+    
+    .consultation-box__left-title {
+      font-size: clamp(1.25rem, 0.933rem + 1.41vw, 2.625rem);
+      font-weight: 250;
+      line-height: clamp(1.625rem, 1.279rem + 1.538vw, 3.125rem);
+      text-align: left;
+      margin-bottom: 22px;
+    }
+    
+    .consultation-box__left-subtitle {
+      display: flex;
+      gap: 15px;
+    }
+    .consultation-box__left-subtitle p {
+      font-family: Geometria;
+      font-size: clamp(0.875rem, 0.817rem + 0.256vw, 1.125rem);
+      font-weight: 400;
+      line-height: clamp(1.375rem, 1.361rem + 0.064vw, 1.438rem);
+      text-align: left;
+    
+    }
+    
+    .consultation-box__right {
+      border-radius: 20px;
+      border-top-left-radius: 60px;
+      background: linear-gradient(211.35deg, #121212 18.93%, #000000 100.58%);
+      max-width: 486px;
+      max-height: 447px;
+      width: 100%;
+      height: 100%;
+      padding: 56px;
+      
+    
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      z-index: 999999;
+    
+      @media screen and (max-width: 1120px) {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        z-index: auto;
+      }
+      @media screen and (max-width: 992px) {
+        align-self: center;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      border-top-left-radius: 30px;
+      }
+      @media screen and (max-width: 500px) {
+        padding: 0 16px 25px 16px;
+        margin-bottom: 0px;
+        background: transparent;
+      }
+    }
+    
+    .consultation-box__right-form {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      font-family: Geometria;
+      font-size: clamp(0.875rem, 0.846rem + 0.128vw, 1rem);
+    }
+    
+    .consultation-box__right-input {
+      background-color: #202020;
+      padding: 25px;
+      outline: none;
+      border: 1px solid transparent;
+      color: #fff;
+    
+      @media screen and (max-width: 500px) {
+        border-radius: 10px;
+        padding: 21px;
+      }
+    }
+    // .consultation-box__right-phone {
+    //   background-color: #202020;
+    //   padding: 15px;
+    //   outline: none;
+    //   border: 1px solid transparent;
+    //   color: #fff;
+    
+    //   @media screen and (max-width: 500px) {
+    //     border-radius: 10px;
+    //     padding: 11px;
+    //   }
+    // }
+    
+    .consultation-box__right-input:focus,
+    .consultation-box__right-phone:focus {
+      border:  1px solid  #E1C98A;
+      transition: all ease .4s;
+    }
+    
+    .consultation-box__right-btn {
+      margin-top: 22px;
+      box-shadow: 0px 14px 48px 0px #E1C98A40;
+      background-color: #E1C98A;
+      font-family: TurismoCF;
+      color: #000;
+      font-size: clamp(0.563rem, 0.534rem + 0.128vw, 0.688rem);
+      font-weight: 800;
+      line-height: clamp(0.625rem, 0.582rem + 0.192vw, 0.813rem);
+      letter-spacing: 0.15em;
+      padding: 28px 0;
+      outline: none;
+      border: none;
+      border-radius: 136px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }

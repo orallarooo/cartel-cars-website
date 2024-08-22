@@ -1,3 +1,5 @@
+import "./Footer.scss"
+
 import telegram from "./img/telegram.png";
 import whatsup from "./img/whatsup.png";
 import facebook from "./img/facebook.png";

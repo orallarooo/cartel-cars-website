@@ -1,5 +1,5 @@
-import vector_gold_bigger from "../img/vector-gold-bigger.svg"
-
+import vector_gold_bigger from "../../img/vector-gold-bigger.svg"
+import "./CarsCard.scss"
 
 const CarsCard = ({name}, {img}) => {
   return (

@@ -1,7 +1,8 @@
-import star_img from "./../img/star.svg";
+import star_img from "../../img/star.svg";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import "./ConsultationBox.scss"
 
 const ConsultationBox = ({ title, sub_1, sub_2, sub_3, submit }) => {
   return (

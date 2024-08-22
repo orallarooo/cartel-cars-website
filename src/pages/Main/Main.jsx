@@ -1,19 +1,50 @@
-import c_1_img from "../img/c-1.png";
-import c_2_img from "../img/c-2.png";
-import c_3_img from "../img/c-3.png";
-import c_4_img from "../img/c-4.png";
-import star_img from "../img/star.svg";
-import img_group_cars from "../img/img-group-cars.png";
-import vector_to_bottom from "../img/Vector-to-bottom.png";
-import vector_gold_smaller from "../img/vec-gold-smaller.svg";
-import vector_gold_bigger from "../img/vector-gold-bigger.svg";
+import "./Main.scss"
 
-import benefits_page_img from "../img/benefits-page-right-bg.png"
+import c_1_img from "../../img/c-1.png";
 
-import cars_black_smaller from "../img/cars-black-smaller.png";
-import CarsCard from "../components/CarsCard";
-import ConsultationBox from "../components/ConsultationBox";
-import RequirementBox from "../components/RequirementBox";
+import c_2_img from "../../img/c-2.png";
+import c_3_img from "../../img/c-3.png";
+import c_4_img from "../../img/c-4.png";
+import star_img from "../../img/star.svg";
+import img_group_cars from "../../img/img-group-cars.png";
+import vector_to_bottom from "../../img/Vector-to-bottom.png";
+import vector_gold_smaller from "../../img/vec-gold-smaller.svg";
+// import vector_gold_bigger from "./img/vector-gold-bigger.svg";
+import benefits_page_img from "../../img/benefits-page-right-bg.png";
+import cars_black_smaller from "../../img/cars-black-smaller.png";
+
+import CarsCard from "../../components/CarsCard/CarsCard";
+import ConsultationBox from "../../components/ConsultationBox/ConsultationBox";
+import RequirementBox from "../../components/RequirementBox/RequirementBox";
+import LinkBtn from "../../components/LinkBtn/LinkBink";
+import Accordion from "../../components/Accordion/Accordion";
+
+const faqList = [
+  {
+    question: "Как я могу забронировать автомобиль?",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+  {
+    question: "Какие документы необходимы для аренды автомобиля?",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+  {
+    question: "Можно ли арендовать автомобиль на несколько дней?",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+  {
+    question: "Что произойдет, если я задержу возврат автомобиля?",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+  {
+    question: "Можно ли превышать суточный лимит по пробегу",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+  {
+    question: "Можно ли выезжать на арендованном авто в другие города/государства?",
+    answer: "Для того, чтобы забронировать авто, нажмите на кнопку ”забронировать”, и наши менеджеры свяжутся с Вами для уточнения деталей",
+  },
+]
 
 const Main = () => {
   return (
@@ -187,15 +218,16 @@ const Main = () => {
               </div>
             </div>
             <div className="page-benefints__inner-right">
-                  <div className="page-benefints__right-box">
-                        <img src={benefits_page_img} alt="" />
-                  </div>
-                  <div className="page-benefints__right-text">
-                        <img src={star_img} alt="" />
-                        <p>
-                              Наши автомобили и подход оставят незабываемые впечатления от аренды.
-                        </p>
-                  </div>
+              <div className="page-benefints__right-box">
+                <img src={benefits_page_img} alt="" />
+              </div>
+              <div className="page-benefints__right-text">
+                <img src={star_img} alt="" />
+                <p>
+                  Наши автомобили и подход оставят незабываемые впечатления от
+                  аренды.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -207,22 +239,14 @@ const Main = () => {
               Наши требования при аренде авто
             </h2>
             <div className="page-requirement__boxes">
-              <RequirementBox text="Регистрация или прописка на территории РФ"/>
-              <RequirementBox text="Возраст водителя от 23 лет"/>
-              <RequirementBox text="Стаж вождения от 3-х лет"/>
-              <RequirementBox text="Суточный пробег до 200 км"/>
+              <RequirementBox text="Регистрация или прописка на территории РФ" />
+              <RequirementBox text="Возраст водителя от 23 лет" />
+              <RequirementBox text="Стаж вождения от 3-х лет" />
+              <RequirementBox text="Суточный пробег до 200 км" />
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
       <div className="page-rent">
         <div className="page-rent__inner">
           <ConsultationBox
@@ -234,6 +258,21 @@ const Main = () => {
             sub_3="Доставка авто в течение дня"
             submit="ЗАБРОНИРОВАТЬ"
           />
+        </div>
+      </div>
+      <div className="page-questions">
+        <div className="page-questions__container">
+          <div className="page-questions__left">
+            <h2 className="page-questions__title">Вопрос -ответ</h2>
+            <p className="page-questions__subtitle">
+              Если у вас остались вопросы, которых нет в списке,
+              <span> вы всегда можете связаться с нашими менеджерами</span>
+            </p>
+            <LinkBtn text="ЗАДАТЬ ВОПРОС" vector={vector_gold_smaller} />
+          </div>
+          <div className="page-questions__right">
+            <Accordion faqList={faqList}/>
+          </div>
         </div>
       </div>
     </main>
