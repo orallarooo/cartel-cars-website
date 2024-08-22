@@ -848,7 +848,7 @@
       width: 100%;
       height: auto;
       background-image: url("../../img/page-ques-phone.png"),url("../../img/page-ques-bg.png");
-      background-position: top, center;
+      background-position: bottom, center;
       background-repeat: no-repeat;
       background-size: cover;
       padding: 48px 0 56px 0;
@@ -858,17 +858,27 @@
       max-width: 1215px;
       padding: 0 30px;
       margin: 0 auto;
-    
-      // background-image: ;
+
       background-position: center;
       background-repeat: no-repeat;
       background-size: auto;
 
       display: flex;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+      @media screen and (max-width: 600px) { 
+        padding: 0 10px;
+      }
     }
     
     .page-questions__left {
       width: 50%;
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }
     
     .page-questions__title {
@@ -900,4 +910,8 @@
 
     .page-questions__right {
       width: 50%;
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
     }

@@ -5,6 +5,9 @@
 
 .accordion-item {
       border-top: 1px solid #434343;
+      @media screen and (max-width: 992px) {
+            padding: 0 20px;
+      }
 }
 
 .accordion-header {
@@ -22,7 +25,6 @@
       font-weight: 500;
       line-height: clamp(1.137rem, 1.063rem + 0.333vw, 1.462rem);
       text-align: left;
-
 }
 
 .accordion-body {
