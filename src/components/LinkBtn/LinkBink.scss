@@ -15,5 +15,16 @@
 
       border-radius: 136px;
       border: 1.5px solid #E1C98A;
-      border: 1px solid #434343
+      border: 1px solid #434343;
+
+      @media screen and (max-width: 600px) { 
+            padding: 19px 16px;
+            z-index: 999999999;
+
+            gap: 6px;
+      }
+
+      img {
+            transform: scale(0.8);
+      }
 }

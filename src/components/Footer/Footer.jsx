@@ -30,7 +30,7 @@ const Footer = () => {
               <img src={telegram} alt="telegram" />
               <img src={whatsup} alt="whatsup" />
               <img src={facebook} alt="facebook" />
-              <img src={youtube} al /* t */="youtube" />
+              <img src={youtube} alt="youtube" />
               <img src={instagram} alt="instagram" />
             </div>
 

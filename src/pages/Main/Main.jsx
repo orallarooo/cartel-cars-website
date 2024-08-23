@@ -263,7 +263,7 @@ const Main = () => {
       <div className="page-questions">
         <div className="page-questions__container">
           <div className="page-questions__left">
-            <h2 className="page-questions__title">Вопрос -ответ</h2>
+            <h2 className="page-questions__title page-questions__title-first">Вопрос -ответ</h2>
             <p className="page-questions__subtitle">
               Если у вас остались вопросы, которых нет в списке,
               <span> вы всегда можете связаться с нашими менеджерами</span>
@@ -271,6 +271,9 @@ const Main = () => {
             <LinkBtn text="ЗАДАТЬ ВОПРОС" vector={vector_gold_smaller} />
           </div>
           <div className="page-questions__right">
+            <h2 className="page-questions__title page-questions__title-second">
+              Вопрос-ответ
+            </h2>
             <Accordion faqList={faqList}/>
           </div>
         </div>

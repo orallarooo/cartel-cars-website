@@ -848,13 +848,19 @@
       width: 100%;
       height: auto;
       background-image: url("../../img/page-ques-phone.png"),url("../../img/page-ques-bg.png");
-      background-position: bottom, center;
+      background-position: center, center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 2120px 700px;
       padding: 48px 0 56px 0;
+
+      @media screen and (max-width: 992px) {
+        padding: 30px 0 45px 0;
+        background-image: none;
+      }
     }
     
     .page-questions__container {
+      position: relative;
       max-width: 1215px;
       padding: 0 30px;
       margin: 0 auto;
@@ -866,7 +872,7 @@
       display: flex;
 
       @media screen and (max-width: 992px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
       @media screen and (max-width: 600px) { 
         padding: 0 10px;
@@ -878,8 +884,36 @@
 
       @media screen and (max-width: 992px) {
         width: 100%;
+        margin-top: 74px;
+        padding: 0 0 0 20px;
+      } 
+
+      &::after {
+        width: 184px;
+        height: 350px;
+        content: "";
+        position: absolute;
+        bottom: -140px;
+        right: 0px;
+
+        background-image: url("../../img/q-page-phone-after.png");
+        background-size: cover;
+        z-index: 9;
+
+        display: none;
+
+        @media screen and (max-width: 992px) {
+          display: block;
+        }
+        @media screen and (max-width: 600px) { 
+          right: 0px;
+          width: 164px;
+          height: 330px;
+        }
       }
     }
+
+    
     
     .page-questions__title {
       max-width: 213px;
@@ -890,6 +924,23 @@
       color: #fff;
     
       margin-bottom: 25px;
+    }
+
+    .page-questions__title-first {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    .page-questions__title-second {
+      display: none;
+
+      @media screen and (max-width: 992px) {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 30px;
+        margin-left: 20px;
+      }
     }
     
     .page-questions__subtitle {
@@ -902,6 +953,11 @@
       color: #fff;
     
       margin-bottom: 43px;
+
+      @media screen and (max-width: 600px) { 
+        margin-bottom: 20px;
+        max-width: 50%;
+      }
     }
 
     .page-questions__subtitle span {
